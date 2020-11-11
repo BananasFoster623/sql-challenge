@@ -8,7 +8,10 @@ SELECT first_name, last_name, hire_date FROM employees WHERE hire_date BETWEEN '
 ORDER BY hire_date ASC
 
 -- List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.
-
+SELECT dpt.dept_no, dpt.dept_name, dptmgr.emp_no, emp.last_name, emp.first_name FROM dept_manager AS dptmgr
+INNER JOIN departments AS dpt ON dptmgr.dept_no = dpt.dept_no
+INNER JOIN employees AS emp ON emp.emp_no = dptmgr.emp_no
+ORDER BY dept_no ASC
 
 -- List the department of each employee with the following information: employee number, last name, first name, and department name.
 
