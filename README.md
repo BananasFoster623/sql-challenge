@@ -9,3 +9,9 @@
     - This is the schema of the database, created from the Backup>Dump function in pgAdmin 4. It is not quite as readable as just SQL queries, so items (2) and (3) were both included.
 4. sql-challenge.sql
     - This is the file with all of the queries as defined by the problem statement. 
+    
+### Additional Notes
+All the deliverables are included under the EmployeeSQL directory. There is a sub-directory 'data' that holds the csv files. 
+
+All data importing was done using the pgAdmin 4 Import/Export feature. 
+    
